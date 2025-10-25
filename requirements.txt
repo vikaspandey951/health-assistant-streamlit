@@ -4,3 +4,4 @@ bcrypt
 requests
 pymupdf
 fpdf2
+groq
