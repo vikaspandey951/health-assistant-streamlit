@@ -39,7 +39,7 @@ def get_ai_response(symptoms, report_text, user_name):
                     "content": safe_prompt, # Send the prompt we already built
                 }
             ],
-            model="llama3-70b-8192", # Use a different Llama3 model on Groq
+            model="llama-3.1-8b-instant", # Use the Mixtral model on Groq
         )
         ai_response_content = chat_completion.choices[0].message.content
         return ai_response_content
