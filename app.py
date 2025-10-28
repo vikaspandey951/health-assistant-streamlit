@@ -314,12 +314,12 @@ if not st.session_state.logged_in:
     show_login_page()
 else:
     # Ensure database connection is valid before showing main app
-    if db is None:
-         st.error("Database connection failed. Please contact support or try again later.")
+    #if db is None:
+        # st.error("Database connection failed. Please contact support or try again later.")
          # Optionally add a logout button here
-         if st.button("Logout"):
-              for key in default_states.keys():
-                   if key in st.session_state: del st.session_state[key]
-              st.rerun()
-    else:
+         #if st.button("Logout"):
+             # for key in default_states.keys():
+                  # if key in st.session_state: del st.session_state[key]
+             # st.rerun()
+  #  else:
          show_main_app()
