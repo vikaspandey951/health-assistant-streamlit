@@ -1,0 +1,6 @@
+streamlit
+pymongo
+bcrypt
+requests
+pymupdf
+fpdf2
